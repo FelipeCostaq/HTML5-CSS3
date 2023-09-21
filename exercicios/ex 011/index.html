@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>body {background-color: aliceblue};</style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Exercico 011</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/musica.mp3" type="audio/mpeg">
+        <source src="midia/musica.wav" type="audio/wav">
+        <source src="midia/musica.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não conseguiu produzir o audio clique <a href="midia/musica.mp3">AQUI</a>para baixar o arquivo MP3</p>
+    </audio>
+</body>
+</html>
