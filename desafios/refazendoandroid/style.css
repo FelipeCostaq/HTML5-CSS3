@@ -98,7 +98,11 @@ main {
     margin-bottom: 30px;
     padding-top: 1px;
     border-radius: 0px 0px 10px 10px ;
-    padding: 20px;}
+    padding: 20px;
+    min-height: 300px;
+    max-height: 3800px;
+}
+    
 
 main strong{
     background-color: transparent;
@@ -136,6 +140,9 @@ aside{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.623);
     padding: 1px;
     height: 450px;
+    min-width: 300px;
+    max-width: 1000px;
+
 }
 aside > h2{
     background-color: #2fa866;
@@ -145,6 +152,8 @@ aside > h2{
     margin: -9px 0px 20px 0px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
     width: 960px;
+    min-width: 300px;
+    max-width: 1000px;
 }
 aside > ul{
     margin: 20px 0px 20px 80px;
@@ -158,6 +167,8 @@ footer{
     border-radius: 10px 10px 0px 0px;
     padding: 5px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.233);
+    min-width: 300px;
+    max-width: 1000px;
 }
 footer a{
     color: white;
