@@ -1,3 +1,3 @@
 # html-css
- Estudos HTML5 e CSS3 do Curso em Vídeo.
+ Estudos HTML5 e CSS3
 
