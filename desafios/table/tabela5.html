@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 5</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 700px;
+            margin: auto;
+            height: 100px;
+        }
+        td,th{
+            padding: 10px;
+            border: 1px solid black;
+        }
+        col.cnome{
+            background-color: lightblue;
+        }
+        col.csexo{
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ex Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class=" csexo" span="3">
+
+        </colgroup>
+        <tr>
+            <th scope="colgroup">Nome</th>
+            <th scope="colgroup">Sexo</th>
+            <th scope="colgroup">Idade</th>
+            <th scope="colgroup">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>João Silva</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Programador Front-End</td>
+        </tr>
+        <tr>
+            <td>Pedro Paulo</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Recepcionista</td>
+        </tr>
+        <tr>
+            <td>Luís Sampaio</td>
+            <td>M</td>
+            <td>56</td>
+            <td>Aposentado</td>
+        </tr>
+        <tr>
+            <td>Vivian Sartori</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Desempregada</td>
+        </tr>
+        <tr>
+            <td>Camila</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Médica</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
