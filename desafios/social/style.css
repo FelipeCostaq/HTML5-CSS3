@@ -11,7 +11,7 @@ html,body{
     width: 100vw;           
     background-color: black;        
     background-image: url(imagens/fundo-madeira.jpg);           
-    background-size: cover;                                             
+                                                
     background-repeat: no-repeat;                      
     background-position: top center;            
 }
@@ -40,4 +40,23 @@ iframe#tela{
     left: 22px;
     width: 266.5px;
     height: 471px;
+}
+
+section#redes-sociais img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.61);
+}
+section#redes-sociais{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid white;
+    transition: 0.5s;
+
 }
