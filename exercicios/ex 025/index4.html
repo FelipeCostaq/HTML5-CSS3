@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 025</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+
+        }
+        fieldset{
+            background-color: rgba(0, 0, 0, 0.034);
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form autocomplete="on" method="get" action="cadastro.php">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="20" placeholder="Usúario">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="E-mail">
+            </p>
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="itelefone" required autocomplete="tel" placeholder="(xx) xxxx-xxxx">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
