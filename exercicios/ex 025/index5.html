@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 025</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul li{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input required type="radio" name="sexo" id="imas" value="M" ><label for="imas" > Masculino</label >
+
+            <input type="radio" name="sexo" id="ifem" value="F"> <label for="ifem"> Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <ul>
+            <li>
+                <input type="checkbox" name="fute" id="ifute" value="Futebol"> <label for="ifute">Futebol</label>
+            </li>
+
+            <li>
+                <input type="checkbox" name="bas" id="ibas" value="Basquete">  <label for="ibas">Basquete</label>
+            </li>
+
+            <li>
+                <input required type="checkbox" name="nata" id="inata" value="Natação"> <label for="inata">Natação</label>
+            </li>
+
+            <li>
+                <input type="checkbox" name="ten" id="iten" value="Tênis"> <label for="iten">Tênis</label>
+            </li>
+
+            </ul>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
