@@ -14,10 +14,48 @@ Desktop: 992px até 1200px
 
 Grandes telas: Acima de 1200px
 
+No w3c tem outras medidas que devem ser consideradas
+
+Celular max-width: 600px
+
+Celulares maiores min-width: 600px
+
+Tablet min-width: 768px
+
+Laptop min-width: 992px
+
+Large laptop min-width: 1200px
+
 ------------------------------ 
 */ 
 
 @media print{
+    body{
+        background-image: url(img/back-print.jpg); /*Não tem como imprimir background-image*/
+    }
+    img#iconphone { display: none;  }
+    img#icontablet { display: none;  }
+    img#iconprint { display: block;  }
+    img#iconpc { display: none;  }
+    img#icontv { display: none;  }
+
+    main h1{
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+    main{
+        border: 1px solid black;
+        width:700px;
+        height: 450px;
+        text-align: center;
+    }
+    main:after{
+        content: 'Imprimido do site de Media Query. www.github.com/FelipeCostaq';
+        padding: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+    }
 
 }
 
@@ -26,6 +64,12 @@ Grandes telas: Acima de 1200px
         background-image: url(img/back-tablet.jpg);
     }
 
+    img#iconphone {display: none;}
+    img#icontablet {display: block;}
+    img#iconprint {display: none;}
+    img#iconpc {display: none;}
+    img#icontv {display: none;}
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px){ /*Desktop*/
@@ -33,11 +77,29 @@ Grandes telas: Acima de 1200px
         background-image: url(img/back-pc.jpg);
     }
 
+    img#iconphone {display: none;}
+    img#icontablet {display: none;}
+    img#iconprint {display: none;}
+    img#iconpc {display: block;}
+    img#icontv {display: none;}
+
 }
 
 @media screen and (min-width: 1200px){ /*Grandes telas*/
     body{
         background-image: url(img/back-tv.jpg);
     }
+
+    main{
+        width: 700px;
+    }
+
+    
+
+    img#iconphone {display: none;}
+    img#icontablet {display: none;}
+    img#iconprint {display: none;}
+    img#iconpc {display: none;}
+    img#icontv {display: block;}
 
 }
