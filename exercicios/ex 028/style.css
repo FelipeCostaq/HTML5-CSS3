@@ -77,3 +77,10 @@ img{
     align-items: center;
 
 }
+
+.anuncio{
+    grid-column: 1;
+    grid-row: 2/5;
+    border: 10px;
+    display: block;
+}
